@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Bhoola Plumbing</title>
+  <link rel="icon" type="image/jpeg" href="images/Logo.jpg">
+  <link rel="apple-touch-icon" href="images/Logo.jpg">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-body">
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img class="brand-logo" src="images/Logo.jpg" alt="Bhoola Plumbing">
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link active">Contact Us</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/27658064201?text=Hello%20Bhoola%20Plumbing,%20I%20would%20like%20to%20get%20a%20quote." target="_blank" class="whatsapp-nav-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Quote on WhatsApp</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <a href="https://wa.me/27658064201?text=Hello%20Bhoola%20Plumbing,%20I%20need%20a%20quote." class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Main Content -->
+  <main class="subpage-content">
+    <div class="page-header container">
+      <span class="subtext">Get In Touch</span>
+      <h1>Request a Free Quote</h1>
+      <p>Have an urgent leak or planning a major upgrade? Chat with us directly on WhatsApp or submit a request online.</p>
+    </div>
+
+    <div class="container section-padded">
+      <div class="contact-grid">
+        
+        <div class="contact-info-panel">
+          <h3>Contact Information</h3>
+          <p>Reach out directly on WhatsApp for immediate response or book an estimate online.</p>
+
+          <div class="info-item">
+            <div class="i-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <label>WhatsApp Line 1</label>
+              <a href="https://wa.me/27658064201?text=Hello%20Bhoola%20Plumbing,%20I%20would%20like%20to%20get%20a%20quote." target="_blank" class="contact-wa-link">
+                +27 65 806 4201
+              </a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="i-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <label>Call Line</label>
+              <p>+27 65 806 4201</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="i-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <label>Email Support</label>
+              <p>info@bhoolaplumbing.co.za</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="i-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <label>Service Area</label>
+              <p>Metro & Surrounding Suburbs</p>
+            </div>
+          </div>
+
+          <div class="emergency-notice">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <div>
+              <strong>Water Leak Emergency?</strong>
+              <p>Message or call us on WhatsApp immediately for rapid dispatch.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" id="custName" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" id="custPhone" required placeholder="082 000 0000">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="custEmail" placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label>Required Service</label>
+                <select id="custService" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="Leak Detection">Leak Detection</option>
+                  <option value="Bathroom Renovation">Bathroom Renovation</option>
+                  <option value="Basin Install">Basin Install</option>
+                  <option value="Shower Install">Shower Install</option>
+                  <option value="HDPE Work">HDPE Work</option>
+                  <option value="Jojo Tank Installation">JoJo Tank Installation</option>
+                  <option value="Maintenance">Maintenance</option>
+                  <option value="Blockages">Blockages</option>
+                  <option value="Drainage">Drainage</option>
+                  <option value="Geyser Installations">Geyser Installations</option>
+                  <option value="Gas Geyser Installation">Gas Geyser Installation</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Project Details / Problem Description</label>
+              <textarea id="custMsg" rows="4" placeholder="Tell us more about the job..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary full-width">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Send Quote Request via WhatsApp</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="f-col">
+        <img class="footer-logo" src="images/Logo.jpg" alt="Bhoola Plumbing">
+        <p class="f-desc">PLUMBING YOU CAN TRUST. Delivering certified, high-grade residential and industrial plumbing solutions across the region.</p>
+      </div>
+
+      <div class="f-col">
+        <h4>Navigation</h4>
+        <ul class="f-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <h4>Key Services</h4>
+        <ul class="f-links">
+          <li><a href="services.html">Gas Geyser Fits</a></li>
+          <li><a href="services.html">Leak Detection</a></li>
+          <li><a href="services.html">JoJo Tanks</a></li>
+          <li><a href="services.html">Drain Unblocking</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <h4>WhatsApp Line</h4>
+        <p class="f-phone"><i class="fa-brands fa-whatsapp"></i> Line 1: +27 65 806 4201</p>
+        <p class="f-hours"><i class="fa-solid fa-clock"></i> 24 Hours / 7 Days a week</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Bhoola Plumbing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
